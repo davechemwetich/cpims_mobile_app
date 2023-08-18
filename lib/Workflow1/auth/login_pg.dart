@@ -45,10 +45,16 @@ class _LoginPageState extends State<LoginPage> {
 
         if (response.statusCode == 200) {
           // Successful login
-          final token = response.data["token"];
-          print("Token is $token");
+          final token = response.data["access"];
 
-          // Navigate to the next screen
+          // Fluttertoast.showToast(
+          //   msg: "Login successful. Token is $token",
+          //   toastLength: Toast.LENGTH_LONG,
+          //   gravity: ToastGravity.BOTTOM,
+          // );
+
+          print('Login successful. Your Token is $token');
+
           // ignore: use_build_context_synchronously
           Navigator.push(
             context,
@@ -57,7 +63,13 @@ class _LoginPageState extends State<LoginPage> {
           );
         } else {
           // Failed login
-          print("Login failed");
+          // Fluttertoast.showToast(
+          //   msg: "Login failed",
+          //   toastLength: Toast.LENGTH_SHORT,
+          //   gravity: ToastGravity.BOTTOM,
+          // );
+
+          debugPrint("Login failed");
         }
       } catch (error) {
         print("Error: $error");
@@ -73,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Login Page"),
+        title: const Text("Login page with POST"),
         centerTitle: true,
       ),
       body: Padding(

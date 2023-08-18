@@ -37,8 +37,8 @@ class _WelcomeState extends State<Welcome> {
                       );
                     },
                     child: const ListTile(
-                      leading: Icon(Icons.apps_rounded),
                       title: Text("Work Flow 1"),
+                      trailing: Icon(Icons.arrow_circle_right_rounded),
                     ),
                   ),
                   const Divider(),
@@ -51,8 +51,8 @@ class _WelcomeState extends State<Welcome> {
                       );
                     },
                     child: const ListTile(
-                      leading: Icon(Icons.apps_rounded),
                       title: Text("Work Flow 2"),
+                      trailing: Icon(Icons.arrow_circle_right_rounded),
                     ),
                   ),
                   const Divider(),
@@ -65,8 +65,8 @@ class _WelcomeState extends State<Welcome> {
                       );
                     },
                     child: const ListTile(
-                      leading: Icon(Icons.apps_rounded),
                       title: Text("Work Flow 3"),
+                      trailing: Icon(Icons.arrow_circle_right_rounded),
                     ),
                   ),
                   const Divider(),

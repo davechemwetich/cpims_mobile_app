@@ -37,6 +37,7 @@ dependencies:
   http: ^1.1.0
   dio: ^5.3.2
   hive: ^3.0.0-dev
+  fluttertoast: ^8.2.2
 
 dev_dependencies:
   flutter_test:

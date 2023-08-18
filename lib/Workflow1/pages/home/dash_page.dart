@@ -14,7 +14,8 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
   @override
   void initState() {
     super.initState();
-    _dashboardData = fetchDashboardData("YOUR_BEARER_TOKEN_HERE");
+    _dashboardData = fetchDashboardData(
+        "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyMzQzNDc5LCJpYXQiOjE2OTIzMzk4NzksImp0aSI6IjM3NGEyMWI5MTBiODQ3OTM4OTNlNmVlMjJlYjdkM2Y3IiwidXNlcl9pZCI6Mzk2Nn0.ktj3gRjmLvqRuWKMgXHnqYGwjnwQ5K7HGYleLp8nQFs");
   }
 
   @override
