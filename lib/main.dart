@@ -1,10 +1,10 @@
 import 'package:cpims_mobile_app/welcome/start_page.dart';
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
+// import 'package:hive/hive.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Hive.openBox('caseloadBox');
+  // WidgetsFlutterBinding.ensureInitialized();
+
   runApp(const Cpims());
 }
 

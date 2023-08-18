@@ -1,24 +1,25 @@
-import 'package:cpims_mobile_app/Workflow1/pages/api/api_service.dart';
+// ignore_for_file: library_private_types_in_public_api
+
+import 'package:cpims_mobile_app/Workflow2/pages/api/api_service.dart';
 import 'package:flutter/material.dart';
 
-class LandingPage2 extends StatefulWidget {
+class LandingPage extends StatefulWidget {
   final String bearerToken;
 
-  LandingPage2(this.bearerToken);
+  const LandingPage(this.bearerToken, {super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
-  _LandingPage2State createState() => _LandingPage2State();
+  _LandingPageState createState() => _LandingPageState();
 }
 
-class _LandingPage2State extends State<LandingPage2> {
-  late ApiService _apiService;
+class _LandingPageState extends State<LandingPage> {
+  late ApiService2 _apiService;
   String _dashboardData = "";
 
   @override
   void initState() {
     super.initState();
-    _apiService = ApiService(widget.bearerToken);
+    _apiService = ApiService2(widget.bearerToken);
     _fetchDashboardData();
   }
 
@@ -29,7 +30,7 @@ class _LandingPage2State extends State<LandingPage2> {
         _dashboardData = response.data.toString();
       });
     } catch (error) {
-      print("Error fetching data: $error");
+      debugPrint("Error fetching data: $error");
     }
   }
 

@@ -13,7 +13,7 @@ class ApiService {
       final response = await _dio.get("dashboard/");
       return response;
     } catch (error) {
-      throw error;
+      rethrow;
     }
   }
 }

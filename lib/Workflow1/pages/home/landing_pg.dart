@@ -1,10 +1,12 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:cpims_mobile_app/Workflow1/pages/api/api_service.dart';
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatefulWidget {
   final String bearerToken;
 
-  LandingPage(this.bearerToken);
+  const LandingPage(this.bearerToken, {super.key});
 
   @override
   _LandingPageState createState() => _LandingPageState();
@@ -28,7 +30,7 @@ class _LandingPageState extends State<LandingPage> {
         _dashboardData = response.data.toString();
       });
     } catch (error) {
-      print("Error fetching data: $error");
+      debugPrint("Error fetching data: $error");
     }
   }
 
@@ -36,7 +38,7 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Dashboard"),
+        title: const Text("Dashboard"),
       ),
       body: Center(
         child: Padding(
