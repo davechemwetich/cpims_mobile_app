@@ -1,4 +1,5 @@
 import 'package:cpims_mobile_app/Workflow1/auth/login_pg.dart';
+import 'package:cpims_mobile_app/Workflow2/auth/login_pg.dart';
 import 'package:cpims_mobile_app/Workflow3/auth/auth3.dart';
 import 'package:flutter/material.dart';
 
@@ -46,7 +47,7 @@ class _WelcomeState extends State<Welcome> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const LoginPage1()),
+                            builder: (context) => const LoginPage2()),
                       );
                     },
                     child: const ListTile(
