@@ -1,17 +1,16 @@
 // ignore_for_file: avoid_print
-
-import 'package:cpims_mobile_app/Workflow1/pages/home/dash_page.dart';
+import 'package:cpims_mobile_app/Workflow1/pages/home/landing_pg.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class LoginPage1 extends StatefulWidget {
+  const LoginPage1({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<LoginPage1> createState() => _LoginPage1State();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginPage1State extends State<LoginPage1> {
   final _formKey = GlobalKey<FormState>();
   final _usernameController = TextEditingController();
   final _passwordController = TextEditingController();
@@ -59,7 +58,10 @@ class _LoginPageState extends State<LoginPage> {
           Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => DashBoardScreen(token: token)),
+              builder: (context) => LandingPage(
+                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyMzQ1OTE4LCJpYXQiOjE2OTIzNDIzMTgsImp0aSI6IjA2MzQ3Y2FmYWM0NjQzYmRhYWZlN2FjMTdjY2U3ZjJjIiwidXNlcl9pZCI6Mzk2Nn0.VyF-5aCeqOXOcpvl3x0klrKCdyLo009QkqBhyY-YbNQ",
+              ),
+            ),
           );
         } else {
           // Failed login
