@@ -6,6 +6,4 @@ A new Flutter project.
 
 ## Workflow 1
 
-<p align="center">
-  <img src="https://telegra.ph/file/3deb755dd9766ce9aeda1.png" width="350" > 
-</p>
+[Image](https://telegra.ph/file/3deb755dd9766ce9aeda1.png)

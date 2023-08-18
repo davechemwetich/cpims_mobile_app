@@ -1,6 +1,6 @@
 import 'package:cpims_mobile_app/Workflow1/auth/login_pg.dart';
 import 'package:cpims_mobile_app/Workflow2/auth/login_pg.dart';
-import 'package:cpims_mobile_app/Workflow3/auth/auth3.dart';
+import 'package:cpims_mobile_app/Workflow3/auth/login_pg.dart';
 import 'package:flutter/material.dart';
 
 class Welcome extends StatefulWidget {

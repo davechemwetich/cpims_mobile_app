@@ -5,14 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-const String SETTINGS_BOX = "settings";
-const String API_BOX = "api_data";
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
-  await Hive.openBox(SETTINGS_BOX);
-  await Hive.openBox(API_BOX);
+
   runApp(const Cpims());
 }
 
