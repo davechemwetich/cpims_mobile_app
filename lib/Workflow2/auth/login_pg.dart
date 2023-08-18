@@ -1,5 +1,5 @@
 // ignore_for_file: avoid_print
-import 'package:cpims_mobile_app/Workflow1/pages/home/landing_pg.dart';
+import 'package:cpims_mobile_app/Workflow2/pages/home/landing_pg.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
@@ -58,8 +58,8 @@ class _LoginPage2State extends State<LoginPage2> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const LandingPage(
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyMzYwODMzLCJpYXQiOjE2OTIzNTcyMzMsImp0aSI6IjMwMDlhNzU4ODQxMTRjYmJhMWI3MzFkYjQ0MTYwMzJkIiwidXNlcl9pZCI6Mzk2Nn0.RCkBThT6cev03JEoBsUvJXxrRfTOpBZMH9eeBRVq-GQ",
+              builder: (context) => const LandingPage2(
+                " eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjkyMzc3NTM1LCJpYXQiOjE2OTIzNzM5MzUsImp0aSI6ImY1ZTJjZTAxODJjNjQ5NjU5NDkzNTZkZGQ2N2JjZWM0IiwidXNlcl9pZCI6Mzk2Nn0.rFoTdgMp_OUWFBnpxu5Y6EkRHNGL1mS2KZ3f20j3rWY",
               ),
             ),
           );

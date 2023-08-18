@@ -1,18 +1,18 @@
 // ignore_for_file: library_private_types_in_public_api
 
-import 'package:cpims_mobile_app/Workflow2/pages/api/api_service.dart';
+import 'package:cpims_mobile_app/Workflow2/pages/service/api_service.dart';
 import 'package:flutter/material.dart';
 
-class LandingPage extends StatefulWidget {
+class LandingPage2 extends StatefulWidget {
   final String bearerToken;
 
-  const LandingPage(this.bearerToken, {super.key});
+  const LandingPage2(this.bearerToken, {super.key});
 
   @override
-  _LandingPageState createState() => _LandingPageState();
+  _LandingPage2State createState() => _LandingPage2State();
 }
 
-class _LandingPageState extends State<LandingPage> {
+class _LandingPage2State extends State<LandingPage2> {
   late ApiService2 _apiService;
   String _dashboardData = "";
 
